@@ -36,9 +36,13 @@ const BardSchema = new Schema({
     charisma: {
         type: Number
     },
-    weapons: [],
-    equipment: [],
-    
+    items: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Item'
+        }
+    ],
+
 });
 
 const Bard = model('Bard', BardSchema);
