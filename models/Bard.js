@@ -14,7 +14,31 @@ const BardSchema = new Schema({
     },
     race: {
         type: String
-    }
+    },
+    hitPoints: {
+        type: Number
+    },
+    strength: {
+        type: Number
+    },
+    dexterity: {
+        type: Number
+    },
+    constitution: {
+        type: Number
+    },
+    intelligence: {
+        type: Number
+    },
+    wisdom: {
+        type: Number
+    },
+    charisma: {
+        type: Number
+    },
+    weapons: [],
+    equipment: [],
+    
 });
 
 const Bard = model('Bard', BardSchema);

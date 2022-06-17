@@ -12,7 +12,7 @@ const bardController = {
     },
 
     getBardById({ params }, res) {
-        Bard.findOne({ _id: params.id })
+        Bard.findById({ _id: params.id })
             .then(dbBardData => {
                 if (!dbBardData) {
                     res.status(404).json({ message: 'No Bard found with this id!'});
